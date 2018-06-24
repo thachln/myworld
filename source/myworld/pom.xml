@@ -5,17 +5,16 @@
 
 	<groupId>mksgroup.myworld</groupId>
 	<artifactId>myworld-web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>myworld</name>
 	<description>My virtual world</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>mksgroup.myworld</groupId>
+		<artifactId>myworld</artifactId>
+		<version>0.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -76,6 +75,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>myworld</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
